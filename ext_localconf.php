@@ -49,10 +49,10 @@ $version21 = version_compare(t3lib_extMgm::getExtensionVersion('powermail'), '2.
 $version22 = version_compare(t3lib_extMgm::getExtensionVersion('powermail'), '2.2.0');
 
 if ( ( $version16 >= 0 ) && ( $version20 < 0 ) ) {
-	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['powermail']['PM_MainContentHookAfter'][]	= 'EXT:wt_cart/Classes/Hooks/Tx_WtCart_Hooks_Forms16.php:tx_wtcart_powermail';
-	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['powermail']['PM_SubmitEmailHook'][]			= 'EXT:wt_cart/Classes/Hooks/Tx_WtCart_Hooks_Forms16.php:tx_wtcart_powermail';
-	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['powermail']['PM_MandatoryHook'][]			= 'EXT:wt_cart/Classes/Hooks/Tx_WtCart_Hooks_Forms16.php:tx_wtcart_powermail';
-	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['powermail']['PM_SubmitLastOne'][]			= 'EXT:wt_cart/Classes/Hooks/Tx_WtCart_Hooks_Forms16.php:tx_wtcart_powermail';
+	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['powermail']['PM_MainContentHookAfter'][]	= 'EXT:wt_cart/Classes/Hooks/Tx_WtCart_Hooks_Forms16.php:Tx_WtCart_Hooks_Forms16';
+	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['powermail']['PM_SubmitEmailHook'][]		= 'EXT:wt_cart/Classes/Hooks/Tx_WtCart_Hooks_Forms16.php:Tx_WtCart_Hooks_Forms16';
+	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['powermail']['PM_MandatoryHook'][]		= 'EXT:wt_cart/Classes/Hooks/Tx_WtCart_Hooks_Forms16.php:Tx_WtCart_Hooks_Forms16';
+	$GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['powermail']['PM_SubmitLastOne'][]		= 'EXT:wt_cart/Classes/Hooks/Tx_WtCart_Hooks_Forms16.php:Tx_WtCart_Hooks_Forms16';
 }
 
 if ( ( $version20 >= 0 ) && ( $version21 < 0 ) ) {
